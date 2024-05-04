@@ -1,4 +1,5 @@
 import keyboard
+import os
 
 recorded = keyboard.record(until='esc') 
 
@@ -44,3 +45,5 @@ for char2 in characters2:
 
 with open('clean.txt', 'w') as f:
     f.writelines(charbetween2)
+    os.remove('keyboard.txt')
+    os.remove('cleaner.txt')
