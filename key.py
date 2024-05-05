@@ -1,6 +1,8 @@
 import keyboard
 import os
 
+print('Press the "Escape" key to stop the program from running.')
+
 recorded = keyboard.record(until='esc') 
 
 with open("keyboard.txt", "w") as f:
